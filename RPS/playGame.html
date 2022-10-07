@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+  <head>
+    <meta charset="UTF-8">
+    <link rel="RPS" href="RPS.js">
+    <link rel="stylesheet" href="styles.css">
+    <title>RPS</title>
+    <script src="RPS.js"></script>
+  </head>
+
+  <body style="background-color: slategrey">
+      <h1>Rock Paper Scissors</h1>
+      <div class="flexBody">
+        <div class = "playerCard">
+          Player
+        </div>
+        <div class = "compCard">
+          Comp
+        </div>
+      </div>
+      <div class="flexBody">
+        
+        <div class = "playerRPSCard">
+          <img src = "img/rock.png" alt="photo of a bulding at night" class="photo" onclick= "selectRPS('PR')" id="PR" >
+        </div>
+        <div class = "compRPSCard">
+          <img src = "img/rock.png" alt="photo of a bulding at night" class="photo" id="CR">
+        </div>
+      </div>
+      <div class="flexBody">
+        <div class = "playerRPSCard">
+          <img src = "img/paper.png" alt="photo of a bulding at night" class="photo" onclick= "selectRPS('PP')" id="PP">
+        </div>
+        <div class = "compRPSCard">
+          <img src = "img/paper.png" alt="photo of a bulding at night" class="photo" id="CP">
+        </div>
+      </div>
+      <div class="flexBody">
+        <div class = "playerRPSCard">
+          <img src = "img/scissors.png" alt="photo of a bulding at night" class="photo" onclick= "selectRPS('PS')" id="PS">
+        </div>
+        <div class = "compRPSCard">
+          <img src = "img/scissors.png" alt="photo of a bulding at night" class="photo" id="CS">
+        </div>
+      </div>
+      <div class="flexBody">
+        <div class="playerScoreCard">
+          Score:  <div id="playerScore">0</div>
+        </div>
+        <div class="compScoreCard">
+          Score:  <div id="compScore">0</div>
+        </div>
+      </div>
+      
+  </body>
+
+  
+
+  
