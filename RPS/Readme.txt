@@ -1,4 +1,4 @@
-Rock Paper Scissors Read.me
+Rock Paper Scissors Readme
 
 -Christopher Syrnyk
 
