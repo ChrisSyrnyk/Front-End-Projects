@@ -1,0 +1,178 @@
+/*styles page*/
+
+:root{
+--transparent: rgba(0,0,0,0);
+--textColor: grey;
+}
+
+Body{
+    margin:0% ;
+    display: flex;
+    background-color: black;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.imageContainer{
+    display: flex;
+    top: 0vh;
+    left: 0vw;
+    height: 100vh;
+    width: 40vw;
+    background-image: url("img/Spaceman4.jpg");
+    background-size: cover;
+    background-position-x: center;
+    box-shadow: 5px 0px 20px 1px rgba(104, 97, 97, 0.5);
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    top: 0vh;
+    left: 41vw;
+    height: 100vh;
+    width: 60vw;
+    background-color: var(--transparent);
+    color: var(--textColor);
+}
+
+.logoBanner{
+    display: flex;
+    position: relative;
+    top: 20vh;
+    height: 10vh;
+    width: 40vw;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.logoContainer{
+    display: flex;
+    position: relative;
+    top: 1vh;
+    height: 8vh;
+    width: 20vw;
+    left: 10vw;
+    background-color:var(--transparent);
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    top: 1vh;
+    height: 6vh;
+    width: 4vw;
+    left: 6vw;
+    background-color: var(--transparent);
+}
+
+.logoIMG{
+    align-content: center;
+    margin: auto;
+    height: 4vh;
+    width: auto;
+}
+
+.logoText{
+    display: flex;
+    position: relative;
+    top: 1vh;
+    height: 6vh;
+    width: 5vw;
+    left: 6vw;
+    background-color: var(--transparent);
+    color: white;
+    align-items: center;
+}
+
+.mottoContainer{
+    display: flex;
+    position: fixed;
+    top: 20vh;
+    left: 43vw;
+    height: 20vh;
+    width: 56vw;
+    background-color: var(--transparent);
+    font-size: large;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50vh;
+    left: 40vw;
+    height: 25vh;
+    width: 60vw;
+    background-color: rgba(46, 46, 46, 0.5);
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+}
+
+.formButtonContainer{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 77vh;
+    left: 41vw;
+    height: 5vh;
+    width: 30vw;
+    background-color: var(--transparent);
+}
+
+.signupMessage{
+    background-color: var(--transparent);
+    position: relative;
+    height: 6%;
+    margin: 2%;
+    width: 100vw;
+
+}
+
+.inputLeft{
+    background-color: var(--transparent);
+    position: relative;
+    height: 6%;
+    margin: 1%;
+    margin-left: 2%;
+    width: 27vw;
+    float: left;
+}
+
+.inputRight{
+    background-color: var(--transparent);
+    position: relative;
+    height: 6%;
+    margin: 1%;
+    margin-right: 2%;
+    width: 27vw;
+    float: right;
+}
+
+input{
+    background-color: rgba(104, 97, 97, 0.5);
+    border-color: rgba(199,36,177,0.9);
+    border-radius: 6px;
+    width: 90%;
+    color: white;;
+}
+
+.button {
+    background-color: var(--transparent);
+    color: rgba(199,36,177,0.9);
+    border-color: rgba(199,36,177,0.9);
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 10px 40px;
+}
+
+a{
+    color: rgba(199,36,177,0.9);
+    font-weight: 800;
+    text-decoration: none;
+}
+    
