@@ -1,0 +1,363 @@
+/*styles page*/
+
+:root{
+--transparent: rgba(0,0,0,0);
+--textColor: grey;
+--darkergrey: rgb(110, 108, 108);
+--selectionGreen: rgba(125, 194, 69, 0.644);
+}
+
+Body{
+    margin: 0% ;
+    display: flex;
+    background-color: white;
+}
+
+
+
+/*Main Layout*/
+
+.game-container{
+    position: absolute;
+    display: inline-grid;
+    grid-template: repeat(6, 1fr)/repeat(6, 1fr);
+    grid-template-areas: 
+        "header header header header header header"
+        "left game game game game right"
+        "left game game game game right"
+        "left game game game game right"
+        "left game game game game right"
+        ". . . . . ."
+    ;
+    top: 5vh;
+    left: 0;
+    right: 0;   
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90vw;
+    max-width: 90vh;
+    height: 90vw;
+    max-height: 90vh;
+    background-color: var(--transparent);
+}
+
+
+.Square {
+    font-size: 50%;
+    text-align: center;
+  }
+
+.game{
+    grid-area: game;
+    background-color: var(--transparent);
+    display: inline-grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    grid-template-areas: 
+        "top-left top top-right"
+        "middle-left middle middle-right"
+        "bottom-left bottom bottom-right"
+    ;
+}
+
+.space{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background-color: lightgrey;
+    border-color: brown;
+    border-width: 5px;
+    justify-content: center;
+}
+
+.top-left{
+    grid-area: top-left;
+}
+.top{
+    grid-area: top;
+}
+.top-right{
+    grid-area: top-right;
+}
+.middle-left{
+    grid-area: middle-left;
+}
+.middle{
+    grid-area: middle;
+}
+.middle-right{
+    grid-area: middle-right;
+}
+.bottom-left{
+    grid-area: bottom-left;
+}
+.bottom{
+    grid-area: bottom;
+}
+.bottom-right{
+    grid-area: bottom-right;
+    
+}
+
+
+
+.header{
+    grid-area: header;
+    background-color: var(--transparent);
+}
+
+.left{
+    grid-area: left;
+    background-color: var(--transparent);   
+}
+
+.right{
+    grid-area: right;
+    background-color: var(--transparent);
+}
+
+/* Score container */
+
+.score-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 60%;
+    margin: 5%;
+    background-color: var(--darkergrey);
+}
+
+/* Menu container */
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    width: 66.7%;
+    height: 70%;
+    margin-top: 2.5%;
+    margin-left: 16.7%;
+    margin-right: 16.7%;
+    background-color: var(--darkergrey);
+}
+
+.menu-title{
+    justify-content: center;
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 25%;
+    margin: auto;
+    background-color: var(--transparent);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    color: black;
+}
+
+.menu-selection{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 40%;
+    margin: 6.25%;
+    margin-top: 3%;
+    background-color: var(--transparent);
+}
+
+.menu-button{
+    position: relative;
+    display: flex;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    background-color: lightgrey;
+    
+}
+
+/* round corner */
+.round-corners{
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--transparent);
+}
+
+.piece{
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    margin-top: 6%;
+}
+
+
+/*Home*/
+
+.home-container{
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    right: 0;   
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90vw;
+    max-width: 90vh;
+    height: 90vw;
+    max-height: 90vh;
+    background-color: rgba(199, 84, 84, 0.815);
+}
+
+.home-options-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 22.5vh;
+    left: 0;
+    right: 0;   
+    margin: auto;
+    text-align: center;
+    width: 40vw;
+    max-width: 40vh;
+    height: 40vw;
+    max-height: 40vh;
+    background-color: var(--darkergrey);
+}
+
+.option-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 25%;
+    margin: auto;
+    background-color: lightgrey;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.option-left{
+    position: relative;
+    display: flex;
+    width: 20%;
+    height: 90%;
+    margin: auto;
+    background-color: var(--transparent);
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.option-right1{
+    position: relative;
+    display: flex;
+    width: 60%;
+    height: 90%;
+    margin: auto;
+    background-color: var(--transparent);
+}
+.option-right2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    margin: auto;
+    background-color: var(--transparent);
+}
+.player-name{
+    position: relative;
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color: var(--transparent);
+    text-align: center;
+}
+.p2-choice{
+    justify-content: center;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    background-color: var(--transparent);
+    font-size: x-large;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.icon{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin: auto;
+}
+
+.hover:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.click:active{
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+/*end game screen*/
+
+.end-game-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 37vh;
+    left: 0;
+    right: 0;   
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 60vw;
+    max-width: 60vh;
+    height: 18vh;
+    max-height: 60vh;
+    background-color: rgba(109, 84, 199, 0.815);
+}
+
+.end-message{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    background-color: var(--transparent);
+    font-size: 80px;
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.end-message-text{
+    position: relative;
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.center {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+
+
+
+  

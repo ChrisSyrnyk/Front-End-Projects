@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+  <head>
+    <meta charset="UTF-8">
+    <link rel="TTT" href="TTT.js">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library</title>
+    <script src="TTT.js"></script>
+  </head>
+
+<body>
+  
+  <div class= "game-container">
+    <div class= "header">
+      <div class = "menu-container round-corners">
+        <div class = "menu-title">
+          Tic Tac Toe
+        </div>
+        <div class = "menu-selection">
+            <button onclick="home()" id = "homeButton" class = "menu-button round-corners hover click">Home</button>
+            <button onclick="resetGame()" id = "resetGame" class = "menu-button round-corners hover click">Reset Game</button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class= "left">
+      
+    </div>
+    <div class= "game">
+      <div class="top-left space round-corners" id="tl" onclick="selectPosition(tl)">
+          
+      </div>
+      <div class="top space round-corners" id="tm" onclick="selectPosition(tm)">
+        
+      </div>
+      <div class="top-right space round-corners" id="tr" onclick="selectPosition(tr)">
+        
+      </div>
+      <div class="middle-left space round-corners" id="ml" onclick="selectPosition(ml)">
+        
+      </div>
+      <div class="middle space round-corners" id="mm" onclick="selectPosition(mm)">
+        
+      </div>
+      <div class="middle-right space round-corners" id="mr" onclick="selectPosition(mr)">
+        
+      </div>
+      <div class="bottom-left space round-corners" id="bl" onclick="selectPosition(bl)">
+        
+      </div>
+      <div class="bottom space round-corners" id="bm" onclick="selectPosition(bm)">
+        
+      </div>
+      <div class="bottom-right space round-corners" id="br" onclick="selectPosition(br)">
+        
+      </div>
+    </div>
+    
+    <div class= "right">
+
+    </div>
+
+  </div>
+
+  <div class = "home-container round-corners" style="display: block;" id="homeWindow">
+    <div class = "home-options-container round-corners">
+      <div class= "option-container round-corners">
+        <div class = "option-left">
+            <div class = "player-name">
+              P1
+            </div>
+        </div>
+        <div class = "option-right1">
+          <img src="img/x-icon.png" class="icon hover click  round-corners" onclick="selectPiece('x')" id = "xPiece">
+          <img src="img/o-icon.png" class="icon hover click round-corners" onclick="selectPiece('o')" id = "oPiece">
+        </div>
+      </div>
+      <div class= "option-container round-corners">
+        <div class = "option-left">
+          <div class = "player-name">
+            P2
+          </div>
+        </div>
+        <div class = "option-right2">
+          <div class = "p2-choice round-corners hover click" onclick="selectP2('player')" id = "player">
+            Player
+          </div>
+          <div class = "p2-choice round-corners hover click" onclick="selectP2('computer')" id = "computer">
+            Computer
+          </div>
+        </div>
+      </div>
+      <button class= "option-container round-corners click" onclick="newGame()">
+        <div class = "p2-choice hover">Start Game</div>
+      </button>
+    </div>
+  </div>
+  </div>
+
+  <div class = "end-game-container round-corners" style = "display: none;" id = "endScreen">
+    <div class = "end-message center" id= "end-message">
+      
+          
+      
+    </div>
+
+</body>
