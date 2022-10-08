@@ -2,7 +2,7 @@ Tic Tac Toe Readme
 
 -Christopher Syrnyk
 
-Description: Web application for keep track of books in ones collection
+Description: Tic Tac Toe Web application
 
 Steps to run this web application
 (1)Download the TTT folder
